@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Jersey15';
+    src: url('./Jersey_15/Jersey15-Regular.ttf') format('truetype');
+}
+
+
+:root{
+--color-dark: rgb(14,14,14);
+--color-white: rgb(255,255,255);
+--color-dark2: rgb(32,32,32);
+--color-white2: rgb(100,100,100);
+--color-Green1: #02A724;
+}
+
+html{
+    font-family: 'Jersey15', sans-serif; 
+
+}
+
+body {
+    background-color: var(--color-dark);
+ 
+}
+
+h1 {
+    color:  var(--color-white); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content--body{
+color: var(--color-white);
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  
+
+
+
+}
+#lista-To-Do {
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+   
+
+}
+
+
+#lista-To-Do  li{
+    list-style-type:none;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#lista-To-Do  li:hover{
+    background-color: var(--color-dark2);
+    transiction: .4s;
+    border-radius: 2rem;
+    padding-left: 0.5rem;
+}
+
+#lista-To-Do li button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    padding: 5px;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: var(--color-Green1);
+    transiction: .4s;
+}
+#lista-To-Do li button:hover{
+    color: var(--color-dark2);
+    background-color: var(--color-dark);
+}
+
+
+
+.content{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+}
+
+
+#input-new-task,button-new-task{
+boder:none;
+font-size: 1rem;
+outline:none;
+padding: 1rem;
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 50rem;
+}
+
+#button-new-task{
+    
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    background-color: var(--color-dark2);
+    color:var(--color-white2);
+    cursor: pointer;
+    transiction: .4s;
+}
+
+#button-new-task:hover{
+    background-color: var(--color-dark);
+}
+
+#btn-ok{
+    
+    
+    cursor: pointer;
+    transiction: .4s;
+    background-color: var(--color-Green1);
+    boder:none;
+    font-size: 1rem;
+
+}
+#btn-ok:hover{
+    background-color: var(--color-dark);
+}
+
+
+

@@ -8,11 +8,7 @@ function validarIfnovaTarefa(){
 
 }
 
-function AlertBotton(){
 
-    alert ('vc clicou no botao')
-
-}
 
 
 function novaTarefa(){
